@@ -31,6 +31,7 @@ global.info = {
 /*============== STAFF ==============*/
 global.owner = [
     ['6283163784116', 'reza', 'true'],
+    ['85260374711', 'rexy rose', 'true'],
     // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.allowed = ['917605902011', '32460248586', '19152999993']
@@ -344,7 +345,7 @@ global.hwaifu = [
 
 /*============== STICKER WM ==============*/
 global.stickpack = 'Made With'
-global.stickauth = 'fourstore'
+global.stickauth = 'rexy rose'
 
 global.multiplier = 38 // The higher, The harder levelup
 global.maxwarn = '3'

@@ -49,7 +49,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp))
                     user.exp = 0
                 if (!isNumber(user.limit))
-                    user.limit = 10
+                    user.limit = 400
                 if (!isNumber(user.freelimit))
                     user.freelimit = 0
                 if (!isNumber(user.lastclaim))
@@ -323,7 +323,7 @@ export async function handler(chatUpdate) {
                 global.db.data.users[m.sender] = {
                 money: 0,
                 exp: 0,
-                limit: 10,
+                limit: 500,
                 freelimit: 0,
                 lastclaim: 0,
                 skata: 0,
