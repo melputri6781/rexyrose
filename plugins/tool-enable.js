@@ -17,6 +17,7 @@ _*❏ ADMIN COMMAND*_
 ⩽⩾ detect ${chat.detect ? '*( ON )*' : '*( OFF )*'}
 ⩽⩾ antilink ${chat.antiLink ? '*( ON )*' : '*( OFF )*'}
 ⩽⩾ antilinkwa ${chat.antiLinkWa ? '*( ON )*' : '*( OFF )*'}
+⩾ antilinkkick ${chat.antiLinkKick ? '*( ON )*' : '*( OFF )*'}
 ⩽⩾ antitoxic ${chat.antiToxic ? '*( ON )*' : '*( OFF )*'}
 ⩽⩾ antibadword ${chat.antiBadword ? '*( ON )*' : '*( OFF )*'}
 ⩽⩾ antidelete ${chat.delete ? '*( ON )*' : '*( OFF )*'}
@@ -36,6 +37,7 @@ _*❏ ADMIN COMMAND*_
 
 _*❏ OWNER COMMAND*_
 
+⩽⩾ autosholat ${bot.sholat ? '*( ON )*' : '*( OFF )*'}
 ⩽⩾ autobackup ${bot.backup ? '*( ON )*' : '*( OFF )*'}
 ⩽⩾ autocleartmp ${bot.cleartmp ? '*( ON )*' : '*( OFF )*'}
 ⩽⩾ autoread ${bot.autoread ? '*( ON )*' : '*( OFF )*'}
@@ -101,6 +103,24 @@ case 'antifoto':
         }
       }
       chat.antiBot = isEnable
+      break
+case 'autosholat':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.autoSholat = isEnable
+      break
+case 'antilinkkick':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLinkKick = isEnable
       break
 case 'antivideo':
       if (m.isGroup) {

@@ -78,7 +78,7 @@ _*❏ A L L M E N U*_
   header: '╭━━╼『 *%category* 』',
   body: '┃ ☰ %cmd %isPremium %islimit',
   footer: '╰━━━━━━━━╼',
-  after: '_© Create by ʙᴏᴛ owen_',
+  after: '_© Create by rexy rose_',
 }
 let handler = async (m, { conn, usedPrefix, __dirname }) => {
   try {
@@ -193,10 +193,10 @@ pageCount: 100000,
 caption: text,
 contextInfo: {
 externalAdReply: {
-title: "FourStore",
+title: "rexy rose",
 body: 'Chat Bot WhatsApp',
 thumbnailUrl: `${thumbnailUrl}`,
-sourceUrl: "https://chat.whatsapp.com/HyU1BxL1pIqIYEc1um0x4y",
+sourceUrl: "https://chat.whatsapp.com/HUFaRCb0WLm5byGZTQeMQE",
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
